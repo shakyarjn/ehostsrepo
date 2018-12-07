@@ -1,0 +1,2 @@
+RepoName: ehostsrepo
+MasterBranch: ehostsmaster

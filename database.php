@@ -1,0 +1,24 @@
+<?php 
+
+class Connection {
+
+	public $con ;
+
+	function __construct() {
+		$this->getConnection();
+	}
+
+	function getConnection () {
+		$this->con = mysqli_connect("localhost","root","","ehostsdb");
+		// Check connection
+		if (mysqli_connect_errno())
+		{
+		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}
+	}
+
+	
+
+}
+
+?>
